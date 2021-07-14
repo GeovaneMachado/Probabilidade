@@ -8,9 +8,9 @@ while True:
         break
 if menu1 == 1:
     x=float(input("Digite um valor para atribuir a X: "))
-    p=float(input("Digite um valor para atribuir a P: "))
+    p=float(input("Digite um valor absoluto para atribuir a P: "))
     n=float(input("Digite um valor para atribuir a N: "))
 else:
     x=float(input("Digite um valor para atribuir a X: "))
-    p=float(input("Digite um valor para atribuir a P: "))
+    p=float(input("Digite um valor absoluto para atribuir a P: "))
     n=float(input("Digite um valor para atribuir a N: "))
