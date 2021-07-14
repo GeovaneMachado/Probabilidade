@@ -1,8 +1,9 @@
 def comb(x,y):
     import math
+    z = x-y
     fatx = math.factorial(x)
     faty = math.factorial(y)
-    fatyx = math.factorial(x-y)
+    fatyx = math.factorial(z)
     combinacao = fatx / (fatyx * faty)
     return combinacao
 
