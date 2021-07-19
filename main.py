@@ -18,6 +18,7 @@ else:
     p=float(input("Digite o valor absoluto da probabilidade de sucesso (p): "))
     n=float(input("Digite o numero de observações (n): "))
     probatotal=0
+    bolsa = x # guarda o valor de x para utulizar no print
     while x >= 0:
         fracasso = (1 - p)  # probabilidade de fracasso
         combinacao=funcoes.comb(n,x) # Chama a função que calcula a combinação de n elementos tomados x a x 
@@ -25,4 +26,4 @@ else:
         relativo=proba*100 #Calcula a probabilidade em valor relativo
         probatotal+=relativo #Soma as probabilidades 
         x-=1
-    print(f"P(x={x})={probatotal} %")
+    print(f"P(x<={bolsa})={probatotal} %")
