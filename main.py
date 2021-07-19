@@ -23,4 +23,4 @@ else:
         relativo=proba*100 #Calcula a probabilidade em valor relativo
         probatotal+=relativo #Soma as probabilidades 
         x-=1 # decrementa 1
-    print(f"P(x<={bolsa})={probatotal:.2f} %")
+    print(f"P(x<={bolsa})={probatotal:.2f}%")
