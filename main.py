@@ -19,7 +19,7 @@ else:
         fracasso = (1 - p)  # probabilidade de fracasso
         combinacao=funcoes.comb(n,x) # Chama a função que calcula a combinação de n elementos tomados x a x 
         proba=combinacao*((p**x)*(fracasso**(n-x))) # calcula a probabilidade binomial individual
-        relativo=proba*100
-        probatotal+=relativo
+        relativo=proba*100 #Calcula a probabilidade em valor relativo
+        probatotal+=relativo #Soma as probabilidades 
         x-=1
     print(f"P(x={x})={probatotal} %")
