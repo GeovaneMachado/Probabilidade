@@ -1,5 +1,6 @@
+import math
+
 def comb(x,y):
-    import math
     z = x-y
     fatx = math.factorial(x)
     faty = math.factorial(y)
@@ -18,7 +19,3 @@ def menu():
             break
     return menu1
 
-'''a=int(input("N: "))
-c=int(input("N: "))
-b=comb(a,c)
-print(b)'''

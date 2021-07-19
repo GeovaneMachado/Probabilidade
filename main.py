@@ -1,6 +1,8 @@
 import funcoes
+import os
 print("Seja Bem vindo!")
-menu1=funcoes.menu() 
+menu1=funcoes.menu()
+os.system('cls') or None
 if menu1 == 1:
     x=float(input("Digite o numero especificado de sucessos (x): "))
     p=float(input("Digite o valor absoluto da probabilidade de sucesso (p): "))
@@ -8,8 +10,9 @@ if menu1 == 1:
     fracasso = (1 - p)  # probabilidade de fracasso
     combinacao=funcoes.comb(n,x) # Chama a função que calcula a combinação de n elementos tomados x a x 
     proba=combinacao*((p**x)*(fracasso**(n-x))) # calcula a probabilidade binomial individual
-    relativo=(proba*100)/p
-    print(f"P(x={x})={relativo}")
+    relativo= proba*100
+    os.system('cls') or None
+    print(f"P(x = {x}) = {relativo:.2f}%")
 else:
     x=float(input("Digite o numero especificado de sucessos (x): "))
     p=float(input("Digite o valor absoluto da probabilidade de sucesso (p): "))
