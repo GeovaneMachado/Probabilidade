@@ -18,4 +18,10 @@ def menu():
         else:
             break
     return menu1
-
+def formatar(txt):
+    end = str(txt)
+        for i in end:
+            print(i,end='')
+            sleep(0.20)
+        print()
+        break
